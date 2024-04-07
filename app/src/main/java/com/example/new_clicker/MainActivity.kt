@@ -1,5 +1,6 @@
 package com.example.new_clicker
 
+import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
@@ -10,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val engine = Engine()
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         val balance_display:TextView = findViewById(R.id.Balance_text)
         val main_button:ImageButton = findViewById(R.id.mainButton)
 
